@@ -19,6 +19,11 @@ LANGUAGE ~English~
          ~english~
          ~dw_talents/lang/english/setup.tra~
 
+LANGUAGE "Francais"
+        ~french~
+        ~dw_talents/lang/english/setup.tra~
+        ~dw_talents/lang/french/setup.tra~
+
 
 //////////////////////////////////////////////////////////////////////
 /// Test

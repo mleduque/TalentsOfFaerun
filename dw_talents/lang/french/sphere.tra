@@ -1,0 +1,41 @@
+@900="Sph[^r]+re[^:]*:"
+@901="Peut apprendre les sorts divins/druidiques de ces sphères : "
+
+@1000="Air"
+@1001="Générale"
+@1002="Faune"
+@1003="Charme"
+@1004="Combat"
+@1005="Divination"
+@1006="Divin"
+@1007="Terre"
+@1008="Fée"
+@1009="Feu"
+@1010="Bien"
+@1011="Guérison"
+@1012="Lune"
+@1013="Nature"
+@1014="Nécromancie"
+@1015="Flore"
+@1016="Protection"
+@1017="Convocation"
+@1018="Soleil"
+@1019="Garde"
+@1020="Eau"
+@1021="Mal"
+
+// should be the first few words of the description of spellcasting for, e.g., rangers and druids
+@1030="Peut lancer quelques sorts divins [^ ]+ partir du niveau[^0-9]+[0-9]+\.?\|Peut lancer des sorts divins\.?\|Peut lancer des sorts de [dD]ruide\.?\|Peut lancer quelques sorts druidiques [^ ]+ partir du niveau[^0-9]+[0-9]+\.?\|Peut lancer quelques sorts divins [^ ]+ partir du niveau[[^0-9]+[0-9]+\.?"
+@1031="Peut lancer des sorts divins\.?\|Peut lancer quelques sorts divins [^ ]+ partir du niveau[[^0-9]+[0-9]+\.?" // should be the first few words of the description of spellcasting for, e.g., paladins and clerics
+@1032="Peut apprendre les sorts divins/druidiques de ces sphères : Générale, Charme, Combat, Divination, Divin, Mal, Bien, Guérison, Nécromancie, Protection, Convocation et garde"
+@1033="Peut apprendre les sorts divins/druidiques de ces sphères : Générale, Air, Faune, Divination, Terre, Fée, Feu, Guérison, Lune, Nature, Flore, Protection, Soleil et Eau"
+@1034="Peut apprendre les sorts divins/druidiques de ces sphères : Générale, Air, Faune, Divination, Terre, Feu, Guérison, Lune, Nature, Flore, Protection, Soleil, Garde et Eau"
+@1035="Peut apprendre les sorts divins/druidiques de ces sphères : Générale, Combat, Divin, Guérison, Protection et Bien"
+@1036="Peut apprendre les sorts divins/druidiques de ces sphères : Générale, Faune, Flore, Guérison et Nature"
+@1037="Peut apprendre les sorts divins/druidiques de ces sphères : Générale, Combat, Divin, Mal, Nécromancie et Protection."
+
+@2027 = ~^\(Niveau[^:]*:\)\( *.+\)~ // should be 1-7 or 'Quest'
+
+/*	OUTER_SPRINT cleric_spheres_default "all charm combat divination divine evil good healing necromantic protection summoning wards"
+	OUTER_SPRINT druid_spheres_default "all air animal divination earth fey fire healing moon nature plant protection sun water"
+E*/

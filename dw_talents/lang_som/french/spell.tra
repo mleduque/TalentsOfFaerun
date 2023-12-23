@@ -13,7 +13,7 @@ C'est la ~
 @212 = ~cesse au bout de 10 rounds.~
 @213 = ~cesse au bout de 10 rounds. D'ici là, seules les magies extrêmement puissantes (tel le sort d'Assaut) peuvent le détruire.~
 
-@216 = ~Mot de pouvoir : cécité 
+@216 = ~Mot de pouvoir : cécité
 (Conjuration/Convocation)
 
 Niveau : 8
@@ -517,12 +517,297 @@ Ce sort fait apparaître une barrière d'ossements flottants qui tourbillonnent 
 @41002 = ~Il ne peut être lancé par un personnage maléfique.~ // NOTE TO TRANSLATORS: Must match the exact string in the description of IWDEE Heal
 @41003 = ~Il ne peut être lancé que par des personnages d'alignement mauvais.~ // NOTE TO TRANSLATORS: Must match the exact string in the description of IWDEE Harm
 
+@41004="Brume de guérison" // renamed from "Brume d'Eldath" bg2ee @103899
+
+@41005="Balor"
+@41006="Diable osseux" // bg2ee @70638
+@41007="Peur du démon" // bg1ee @26038
+
 @50000 = ~Grimoire de la grandiose grandeur~ // NOTE TO TRANSLATORS: don't bother translating this and the next string, it's just a testing item
 @50001 = ~Un simple coup d'œil à ce tome suffit pour donner à son lecteur la connaissance de tous les sortilèges connus, ainsi qu'une intelligence supérieure pour tous les comprendre. Il disparaît après une seule utilisation.
 
 PARAMÈTRES :
 
 Spécial : une fois utilisé, le livre disparaît
-Utilisation : placez le dans un emplacement d'objet rapide
+Utilisation : placez-le dans un emplacement d'objet rapide
 
 Poids : 25~
+
+
+@50043 = "Changement de forme : Flagelleur mental"
+@50044 = "Changement de forme : Flagelleur mental
+
+Force : 10
+Dextérité : 10
+
+Classe d'armure de base : 5
+Nombre d'attaques : 4
+TAC0 de base : 11
+Dégâts de l'attaque : 1d2 contondants, -5 Intelligence
+
+Capacités spéciales :
+- Résistance à la magie : 90 %
+- Souffle psionique à volonté
+- Sous cette forme, peut lancer des sorts de mage"
+
+@50045 = "Changement de forme : Golem de fer"
+@50046 = "Changement de forme : Golem de fer
+
+Force : 24
+Dextérité : 9
+
+Classe d'armure de base : 3
+Nombre d'attaques : 1
+TAC0 de base : 3
+Dégâts de l'attaque : 4d10 contondants
+
+Capacités spéciales :
+ - Résistance au feu : 125 %
+ - Résistance au froid : 100 %
+ - Résistance à l'électricité : 100 %
+ - Résistance à l'acide : 100 %
+ - Résistance à la magie : 100 % (ne peut être abaissée)
+ - Résistance au feu magique : 125 %
+ - Résistance au froid magique : 100 %
+ - Résistance aux dégâts tranchants : 20 %
+ - Résistance aux dégâts contondants : 20 %
+ - Résistance aux dégâts perforants : 20 %
+ - Résistance aux dégâts de projectiles : 20 %
+ - Immunité aux attaques sournoises, aux armes enchantées +2 ou moins, au sommeil, à la terreur, à l'immobilisation, au charme, à la paralysie et au poison.
+ - Sous cette forme, ne peut pas lancer de sorts de mage"
+
+
+@50047 = "Changement de forme : Troll géant"
+@50048 = "Changement de forme : Troll géant
+
+Force : 22
+Dextérité : 18
+
+Classe d'armure de base : 4
+Nombre d'attaques : 3
+TAC0 de base : 8
+Dégâts de l'attaque : 2d6 perforants
+
+Capacités spéciales :
+ - Immunité à l'étourdissement, au sommeil, à l'immobilisation et à la paralysie
+ - Régénération de 5 points de vie par seconde
+ - Sous cette forme, peut lancer des sorts de mage"
+
+
+@50049 = "Changement de forme : Marilith"
+@50050 = "Changement de forme : Marilith
+
+Force : 19
+Dextérité : 18
+
+Classe d'armure de base : -6
+Nombre d'attaques : 5
+TAC0 de base : 6
+Dégâts de l'attaque : 1d8, plus dégâts additionnels de feu, d'acide, de froid, d'électricité, magiques ou de poison de façon aléatoire
+
+Capacités spéciales :
+ - Téléportation à volonté
+ - Immunité contre le charme, la terreur, le poison et la maladie
+ - Résistance à la magie : 85 %
+ - Résistance au feu : 100 %
+ - Résistance à l'électricité : 100 %
+ - Résistance au froid : 50 %
+ - Sous cette forme, peut lancer des sorts de mage"
+
+@50051 = "Changement de forme : Basilic majeur"
+@50052 = "Changement de forme : Basilic majeur
+
+Force : 18
+Dextérité : 10
+
+Classe d'armure de base : 2
+Nombre d'attaques : 3
+TAC0 de base : 11
+Dégâts de l'attaque : 1d8 perforants + poison (3 points de vie par seconde pendant 6 secondes)
+
+Capacités spéciales :
+- Regard pétrifiant (la cible doit réussir un jet de sauvegarde à -4 pour ne pas être changée en pierre de façon permanente) une fois par round"
+
+@50053 = "Regard pétrifiant"
+@50054 = "Regard pétrifiant
+
+Le basilic peut changer en pierre toute créature sur laquelle il pose le regard, à moins qu'elle ne réussisse un jet de sauvegarde contre la pétrification à -4. Ce pouvoir peut être utilisé une fois par round."
+
+@50055 = "Souffle psionique
+
+Le flagelleur mental peut libérer  une décharge d'énergie mentale qui étourdit pendant 10 rounds tous les adversaires dans une petite zone s'ils ratent un jet de sauvegarde contre les sorts. Ce pouvoir peut être utilisé une fois par round."
+
+@50056 = "Téléportation sans erreur
+
+La marilith peut disparaître pour réapparaître instantanément à tout endroit à portée de vue. Ce pouvoir peut-être utilisé une fois par round."
+
+@50057 = "Nuage de gaz
+
+Le golem de fer souffle un nuage de gaz empoisonné. Le nuage persiste pendant 10 secondes et toute créature exposée doit réussir un jet de sauvegarde à -2 à chaque round sous peine d'être empoisonné. Les créatures empoisonnées subissent 3 points de dégâts par seconde pendant 3 round. Le golem de fer peut utiliser ce pouvoir une fois tous les 3 rounds."
+
+
+@50058 = "Changement de forme : Chasseur invisible"
+@50059 = "Changement de forme : Chasseur invisible
+
+Force : 18/10
+Dextérité : 17
+
+Classe d'armure de base : -3
+Nombre d'attaques : 1
+TAC0 de base : 11
+Dégâts de l'attaque : 2d8 contondants
+
+Capacités spéciales :
+- Bénéficie automatiquement d'Invisibilité majeure une fois par round (sauf quand il est soumis à Vision véritable, Poussière scintillante ou à un sort similaire)
+- Immunité au poison et à la maladie
+- Résistance à la magie : 30 %
+- Résistance au feu : 30 %
+- Résistance au froid : 30 %
+- Résistance à l'acide : 30 %
+- Résistance à l'électricité : 30 %
+- Résistance aux dégâts de projectiles : 30 %
+- Sous cette forme, peut lancer des sorts de mage"
+
+@50060="Changement de forme
+(Transmutation)
+
+Niveau : 9
+Portée : 0
+Durée : 1 heure
+Temps d'incantation : 9
+Zone d'effet : lanceur
+Jet de sauvegarde : aucun
+
+Grâce à ce sort, le magicien est capable de prendre la forme d'une créature puissante. Le lanceur de sort devient la créature désirée et possède presque toutes ses capacités. Ainsi, il peut étourdir ses victimes sous la forme d'un flagelleur mental, puis devenir un golem de fer pour les écraser. Les points de vie du magicien restent cependant inchangés. Chaque changement de forme prend une seconde et l'organisme du lanceur n'en souffre pas.
+
+Les formes possibles sont les suivantes :
+- Golem de fer (immunisé contre la plupart des dégâts magiques et élémentaires, puissantes attaques contondantes, souffle empoisonné).
+- Flagelleur mental (90 % de résistance à la magie, 50  de résistance aux dégâts physiques, attaque de drain d'intelligence, Souffle psionique à volonté).
+- Troll géant (régénère 5 points de vie par seconde, puissantes attaques de griffe).
+- Marilith (5 attaques par round, 85 % de résistance à la magie, immunité aux dégâts d'électricité et de feu, 50 % de résistance au froid, Téléportation à volonté).
+- Basilic supérieur (regard pétrifiant utilisable une fois par round, griffes).
+- Chasseur invisible (30 % de résistance à la magie, attaques contondantes relativement puissantes, gagne automatiquement Invisibilité majeure une fois par round).
+
+Le jeteur de sorts peut lancer des sorts de mage normalement dans toutes les formes sauf celles de golem de fer et de basilic supérieur, qui ne peuvent prononcer les incantations de sorts."
+
+@50061="Changement de forme : Barbare géant des collines"
+@50062="Changement de forme : Barbare géant des collines
+
+Force : 19
+Dextérité : 10
+
+Classe d'armure de base : 3
+Nombre d'attaques : 1
+Dégâts de l'attaque : 2d8 perforants (attaque comme une arme +1)
+
+Capacités spéciales :
+- Rage du barbare 1 fois par jour"
+
+@50063="Changement de forme : Ogre Mage"
+@50064="Changement de forme : Ogre Mage
+
+Force : 18/00
+Dextérité : 12
+
+Classe d'armure de base : 4
+Nombre d'attaques : 1
+Dégâts de l'attaque : 1d10 tranchants (attaque comme une arme +1)
+
+Capacités spéciales :
+- Le lancer de sorts est possible sous cette forme"
+
+@50065="Changement de forme : Araignée
+
+Force : 15
+Dextérité : 17
+
+Classe d'armure de base : 4
+Nombre d'attaques : 2
+Dégâts de l'attaque : 1d4 perforants, attaque comme une arme +1, poison (1 point de dégâts toutes les 2 secondes pendant 5  rounds, jet de sauvegarde contre les poisons à +1 annule)
+
+Capacités spéciales :
+- Immunité contre les effets de toile
+- Vitesse de déplacement augmentée
+- Crache une toile sur une cible une fois tous les 2 rounds (la cible doit réussir un jet de sauvegarde contre les souffles ou prise dans la toile pendant 2 rounds)"
+
+@50066="Enchevêtrement dans la toile"
+@50067="Enchevêtrement dans la toile
+
+L'araignée projette une toile qui enchevêtre et immobilise sa cible pendant 2 rounds (jet de sauvegarde pour annuler). Elle peut utiliser ce pouvoir une fois tous les 2 rounds."
+
+@50068 = "Changement de forme : Molosse satanique"
+@50069 = "Changement de forme : Molosse satanique
+
+Force : 18
+Dextérité : 15
+
+Classe d'armure de base : 4
+Nombre d'attaques : 1
+Dégâts de l'attaque : 1d10 perforants + 1d6 feu
+
+Capacités spéciales :
+- Immunisé contre les dégâts de feu
+- Vulnérabilité au froid : +50 % de dégâts
+- Souffle un cône de flammes une fois tous les 3 rounds. Les créatures prises dans le cône subissent 3d6 points de dégâts de feu (jet de sauvegarde contre les souffles pour moitié)"
+
+@50070 = "Souffle de feu de Molosse satanique"
+
+@50071 = "Souffle de feu de Molosse satanique
+
+Le molosse satanique souffle un cône de flammes qui inflige 3d6 points de dégâts de feu à toute créature prise dans le cône (jet de sauvegarde contre les souffles pour moitié). Il peut utiliser ce pouvoir une fois tous les 3 rounds."
+
+@50072 = "Changement de forme : Rat"
+@50073 = "Changement de forme : Rat
+
+Force : 10
+Dextérité : 20
+
+Classe d'armure de base : 4
+Nombre d'attaques : 1
+Dégâts de l'attaque : 1d2 perforants
+
+Capacités spéciales :
+- Se cacher, à volonté (uniquement hors combat)"
+
+@50074 = "Se cacher"
+
+@50075= "Se cacher
+
+Le rat se cache et devient en pratique invisible. Ce n'est pas possible en cours de combat."
+
+@50076="Métamorphose
+(Transmutation)
+
+Niveau : 4
+Portée : 0
+Durée : 1 tour + 3 rounds par niveau
+Temps d'incantation : 4
+Zone d'effet : lanceur
+Jet de sauvegarde : aucun
+
+Ce sort permet au magicien de prendre la forme d'une autre créature. Pendant toute la durée du sort, le magicien peut changer de forme à volonté, autant de fois qu'il le désire. Dans certains cas, le magicien gagnera des capacités d'attaques naturelles, et dans d'autres, la possibilité de se servir d'armes. Si les attributs mentaux sont conservés, ceux physiques s'adaptent à la nouvelle forme. Les résistances naturelles à certaines formes d'attaques (contre projectiles et armes contondantes de la gelée moutarde, par exemple) sont également acquises.
+
+Les formes possibles sont les suivantes :
+- Barbare géant des collines : peut infliger des dégâts important et sa rage peut protéger contre de nombreuses attaques
+- Ogre Mage : attaques tranchantes puissantes ; c'est la seule forme qui permet au mage de lancer des sorts
+- Gelée moutarde : empoisonnement ou ralentissement des adversaires (s'ils ratent un jet de sauvegarde contre la mort quand ils sont touchés)
+- Araignée : dégâts de poison quand l'adversaire est touché ou emprisonnement dans une toile
+- Molosse satanique : immunisé contre le feu et peut cracher des flammes sur un ennemi
+- Rat : difficile à toucher et peut se déplacer furtivement"
+
+@50077 = "Caché"
+
+// iwd:ee @7832
+
+@51000 = "de la moiti[^ ]* du niveau du mage\|de niveau moiti[^ ]+ moindre que le sien" // NOTE TO TRANSLATORS: this string must be present, exactly, in the spell description of Mordenkainen's Force Blade (the IWD version of 'Mordenkainen's sword'.)
+@51001 = "du même niveau que le mage" // NOTE TO TRANSLATORS: this string is substituted for the previous string. The goal is to replace 'fighter of half the level' with 'fighter of the level'
+
+@52000 = "Hâte annulée par Lenteur"
+@52001 = "Lenteur annulée par Hâte"
+
+@100404 = ~
+
+Cette créature peut utiliser ce pouvoir une fois toutes les 99 999 secondes.~
+@100405 = ~
+
+Cette créature peut utiliser ce pouvoir à volonté.~
