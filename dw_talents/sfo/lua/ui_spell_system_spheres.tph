@@ -169,7 +169,7 @@ BEGIN
 				READ_LONG 0x50 desc_strref
 				GET_STRREF desc_strref desc
 				INNER_PATCH_SAVE desc "%desc%" BEGIN	
-					REPLACE_TEXTUALLY "%sphere_base%.*" "%sphere_base% %text%"
+					REPLACE_TEXTUALLY "\(%sphere_base%\).*" "\1 %text%"
 				END
 			BUT_ONLY
 			ACTION_IF desc_strref>0 BEGIN

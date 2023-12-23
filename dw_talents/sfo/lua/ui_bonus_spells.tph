@@ -241,12 +241,12 @@ BEGIN
 					REPLACE_TEXTUALLY "BONUS_SPELL_PLACEHOLDER" "%new_line%"
 				END ELSE 
 				PATCH_IF INDEX ("MAGE_SPELL_PLACEHOLDER" "%desc%") >=0 BEGIN
-					REPLACE_TEXTUALLY "MAGE_SPELL_PLACEHOLDER" "%new_line%"				
+					REPLACE_TEXTUALLY "MAGE_SPELL_PLACEHOLDER" "%new_line%"
 				END ELSE BEGIN
 					SPRINT adv_line @120
 					REPLACE_TEXTUALLY 
-						"^\(\(%adv_line%\).*[%WNL%%LNL%%MNL%]\)\([^A-Za-z0-9]+\)\([A-Za-z0-9].*\)"
-						"\2%WNL%\3%new_line%%WNL%\3\4"
+						"^\(%adv_line%\)\(.*[%WNL%%LNL%%MNL%]\)\([^A-Za-z0-9]+\)\([A-Za-z0-9].*\)"
+						"\1%WNL%\3%new_line%%WNL%\3\4"
 				END
 			END
 			STRING_SET_EVALUATE desc_strref "%desc%"
