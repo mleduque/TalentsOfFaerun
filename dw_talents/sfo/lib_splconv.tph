@@ -405,7 +405,7 @@ BEGIN
 		INNER_PATCH_SAVE new_desc "%old_desc%" BEGIN
 			REPLACE_TEXTUALLY "^%sphere_string%.*" ""
 			PATCH_IF new_ct>=0 BEGIN
-				REPLACE_TEXTUALLY "^%ct_string%[^%WNL%%LNL%%MNL%]*" "%ct_string% %new_ct%"
+				REPLACE_TEXTUALLY "^\(%ct_string%\)[^%WNL%%LNL%%MNL%]*" "\1 %new_ct%"
 			END
 		END
 		PATCH_IF "%old_type%" STR_EQ "wizard" BEGIN 
@@ -422,7 +422,7 @@ BEGIN
 		INNER_PATCH_SAVE new_desc "%old_desc%" BEGIN
 			REPLACE_TEXTUALLY "^%sphere_string%[^%WNL%%LNL%%MNL%]*[%WNL%%MNL%%LNL%]" ""
 			PATCH_IF new_ct>=0 BEGIN
-				REPLACE_TEXTUALLY "^%ct_string%[^%WNL%%LNL%%MNL%]*" "%ct_string% %new_ct%"
+				REPLACE_TEXTUALLY "^\(%ct_string%\)[^%WNL%%LNL%%MNL%]*" "\1 %new_ct%"
 			END
 		END
 		SPRINT new_desc "%new_desc%%WNL%%WNL%%p_to_w_string%"
